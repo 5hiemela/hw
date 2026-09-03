@@ -1,0 +1,11 @@
+.underlined {
+    text-decoration: underline;
+}
+
+.highlighted {
+    background-color: orange;
+}
+
+.redfont {
+    color: red;
+}
