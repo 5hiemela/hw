@@ -4,6 +4,9 @@ let continueLoop = true;
 document.write("<table>");
 document.write("<tr><th>x</th><th>op</th><th>y</th><th>result</th></tr>");
 
+// Array to store only valid results
+let validResults = [];
+
 // Loop until the user clicks "Cancel"
 while (continueLoop) {
     let x = prompt("Enter the first number:");
@@ -28,6 +31,11 @@ while (continueLoop) {
         result = Number(x) % Number(y);
     } else {
         result = "Invalid operator"
+    }
+
+    // Push valid result into array
+    if (!isNaN(result)) {
+        validResults.push(result);
     }
 
     // Display the result in the table
