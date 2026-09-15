@@ -52,3 +52,6 @@ let total = 0;
 for (let i = 0; i < validResults.length; i++) {
     total += validResults[i];
 }
+
+let min = Math.min(...validResults);
+let max = Math.max(...validResults);
