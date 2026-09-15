@@ -46,3 +46,9 @@ while (continueLoop) {
 
 // Close the table
 document.write("</table>");
+
+let total = 0;
+
+for (let i = 0; i < validResults.length; i++) {
+    total += validResults[i];
+}
