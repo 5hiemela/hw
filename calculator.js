@@ -6,5 +6,19 @@ while (continueLoop) {
 
     let operator = prompt("Enter an operator (+, -, *, /, %):");
 
+    let result;
+
+    if (operator === "+") {
+        result = Number(x) + Number(y);
+    } else if (operator === "-") {
+    result = Number(x) - Number(y);
+    } else if (operator === "*") {
+    result = Number(x) * Number(y);
+    } else if (operator === "/") {
+    result = Number(x) / Number(y);
+    } else if (operator === "%") {
+    result = Number(x) % Number(y);
+    }
+
     continueLoop = confirm("Click OK to continue or Cancel to exit.");
 }
