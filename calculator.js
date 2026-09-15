@@ -8,7 +8,9 @@ while (continueLoop) {
 
     let result;
 
-    if (operator === "+") {
+    if (isNaN(x) || isNaN(y)) {
+        result = "Invalid input number";
+    } else if (operator === "+") {
         result = Number(x) + Number(y);
     } else if (operator === "-") {
         result = Number(x) - Number(y);
