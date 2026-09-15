@@ -18,6 +18,8 @@ while (continueLoop) {
         result = Number(x) / Number(y);
     } else if (operator === "%") {
         result = Number(x) % Number(y);
+    } else {
+        result = "Invalid operator"
     }
 
     continueLoop = confirm("Click OK to continue or Cancel to exit.");
