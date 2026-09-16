@@ -2,7 +2,7 @@ let continueLoop = true;
 
 // Create a table to display the results
 document.write("<table class='calculator-table'>");
-document.write("<tr><th>x</th><th>op</th><th>y</th><th>result</th></tr>");
+document.write("<tr class='table-header'><th>x</th><th>op</th><th>y</th><th>result</th></tr>");
 
 // Array to store only valid results
 let validResults = [];
@@ -72,6 +72,6 @@ if (validResults.length > 0) {
 
 // Create summary table
 document.write("<table class='summary-table'>");
-document.write("<tr><th>Min</th><th>Max</th><th>Average</th><th>Total</th></tr>");
+document.write("<tr class='table-header'><th>Min</th><th>Max</th><th>Average</th><th>Total</th></tr>");
 document.write("<tr><td>" + min + "</td><td>" + max + "</td><td>" + average + "</td><td>" + total + "</td></tr>");
 document.write("</table>");
