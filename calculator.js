@@ -69,3 +69,9 @@ if (validResults.length > 0) {
     max = "N/A";
     average = "N/A";
 }
+
+// Create summary table
+document.write("<table>");
+document.write("<tr><th>Min</th><th>Max</th><th>Average</th><th>Total</th></tr>");
+document.write("<tr><td>" + min + "</td><td>" + max + "</td><td>" + average + "</td><td>" + total + "</td></tr>");
+document.write("</table>");
