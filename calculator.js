@@ -54,9 +54,18 @@ for (let i = 0; i < validResults.length; i++) {
     total += validResults[i];
 }
 
-// Calculate min and max
-let min = Math.min(...validResults);
-let max = Math.max(...validResults);
+// Calculate min, max, and average
+let min;
+let max;
+let average;
 
-// Calculate average
-let average = total / validResults.length;
+// Check if there are valid results to avoid errors
+if (validResults.length > 0) {
+    min = Math.min(...validResults);
+    max = Math.max(...validResults);
+    average = total / validResults.length;
+} else {
+    min = "N/A";
+    max = "N/A";
+    average = "N/A";
+}
