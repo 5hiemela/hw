@@ -28,3 +28,25 @@
     border: 1px solid #ccc;
     padding: 12px 18px;
 }
+
+.calculator-table .table-header,
+.summary-table .table-header {
+    background-color: #0039A6;
+    color: white;
+}
+
+.calculator-table .table-header,
+.summary-table .table-header {
+    background-color: #0039A6;
+    color: white;
+}
+
+.calculator-table tr:nth-child(even),
+.summary-table tr:nth-child(even) {
+    background-color: #f2f6fc;
+}
+
+.calculator-table tr:hover,
+.summary-table tr:hover {
+    background-color: #e1ebf8;
+}
